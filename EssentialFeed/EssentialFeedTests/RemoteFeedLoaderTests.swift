@@ -57,7 +57,7 @@ class RemoteFeedLoaderTests: XCTestCase {
     }
     
     private class HTTPClientSpy: HTTPClient {
-        private var messages = [(url: URL, completion: (Error) -> Void)]()
+        private var messages = [(url: URL, completion:(Error) -> Void)]()
         
         var requestedURLs: [URL] {
             return messages.map{ $0.url }
