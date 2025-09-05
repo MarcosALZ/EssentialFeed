@@ -57,6 +57,7 @@ class RemoteFeedLoaderTests: XCTestCase {
         }
     }
     
+    
     func test_load_deliversErrorOnFailedHTTPResponseWithInvalidJSON() {
         let (sut, client) = makeSUT()
         
@@ -73,6 +74,43 @@ class RemoteFeedLoaderTests: XCTestCase {
             let emptyJSON = Data("{\"items\" : []}".utf8)
             client.complete(withStatusCode: 200, data: emptyJSON)
         }
+    }
+    
+    func test_deliversFeedItemsOnSuccessfulHTTPResponseWithValidJSONContainingMultipleItems() throws {
+        let (sut, client) = makeSUT()
+        
+        let item1 = FeedItem(id: UUID(),
+                             description: nil,
+                             location: nil,
+                             imageURL: URL(string: "https://a-url.com")!)
+        
+        let item2 = FeedItem(id: UUID(),
+                             description: "A description",
+                             location: nil,
+                             imageURL: URL(string: "https://another-url.com")!)
+        
+        let item1JSON = [
+            "id": item1.id.uuidString,
+            "image": item1.imageURL.absoluteString,
+        ]
+        
+        let item2JSON = [
+            "id": item2.id.uuidString,
+            "description": item2.description,
+            "location": item2.location,
+            "image": item2.imageURL.absoluteString,
+        ]
+        
+        let itemsJSON = [
+            "items": [item1JSON, item2JSON]
+        ]
+        
+        expect(sut,
+               toCompleteWith: .success([item1, item2]),
+               when: {
+            let jsonData = try! JSONSerialization.data(withJSONObject: itemsJSON)
+            client.complete(withStatusCode: 200, data: jsonData)
+        })
     }
     
     // MARK: - Helpers
