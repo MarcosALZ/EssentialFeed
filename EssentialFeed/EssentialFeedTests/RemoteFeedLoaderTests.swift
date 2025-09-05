@@ -66,6 +66,18 @@ class RemoteFeedLoaderTests: XCTestCase {
         })
     }
     
+    func test_deliversFeedOnSuccessfulHTTPResponseWithValidJSON() throws {
+        let (sut, client) = makeSUT()
+        
+        var capturedResults = [RemoteFeedLoader.Result]()
+        sut.load { capturedResults.append($0) }
+        
+        let emptyJSON = Data("{\"items\" : []}".utf8)
+        client.complete(withStatusCode: 200, data: emptyJSON)
+        
+        XCTAssertEqual(capturedResults, [.success([])])
+    }
+    
     // MARK: - Helpers
     
     private func makeSUT(url: URL = URL(string: "https://example.com/feed.json2")!) -> (sut: RemoteFeedLoader, client: HTTPClientSpy) {
@@ -76,12 +88,12 @@ class RemoteFeedLoaderTests: XCTestCase {
     
     private func expect(_ sut: RemoteFeedLoader, toCompleteWithError error: RemoteFeedLoader.Result, when action: () -> Void, file: StaticString = #filePath, line: UInt = #line) {
         
-        var capturedErrors = [RemoteFeedLoader.Result]()
-        sut.load { capturedErrors.append($0) }
+        var capturedResults = [RemoteFeedLoader.Result]()
+        sut.load { capturedResults.append($0) }
         
         action()
         
-        XCTAssertEqual(capturedErrors, [error], file: file, line: line)
+        XCTAssertEqual(capturedResults, [error], file: file, line: line)
     }
     
     private class HTTPClientSpy: HTTPClient {
