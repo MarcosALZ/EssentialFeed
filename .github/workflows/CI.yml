@@ -22,7 +22,7 @@ jobs:
       run: xcodebuild -version
 
     - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode26.app
+      run: sudo xcode-select -switch /Applications/Xcode_26.app
 
     - name: Build and test
       run: xcodebuild clean build test -project EssentialFeed/EssentialFeed.xcodeproj -scheme "CI" CODE_SIGN_IDENTITY="" CODE_SIGN_REQUIRED=NO
