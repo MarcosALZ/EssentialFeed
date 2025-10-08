@@ -92,13 +92,8 @@ class CodableFeedStoreTests: XCTestCase {
         let sut = makeSUT()
         let feed = uniqueImageFeed().local
         let timestamp = Date()
-        let exp = expectation(description: "Wait for result")
         
-        sut.insert(feed, timestamp: timestamp) { insertionError in
-            XCTAssertNil(insertionError)
-            exp.fulfill()
-        }
-        wait(for: [exp], timeout: 1.0)
+        insert(cache: (feed: feed, timestamp: timestamp), to: sut)
         
         expect(sut, toRetrieve: .found(feed, timestamp: timestamp))
     }
