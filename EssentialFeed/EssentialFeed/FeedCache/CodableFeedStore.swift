@@ -53,7 +53,7 @@ public class CodableFeedStore: FeedStore {
             do {
                 let decoder = JSONDecoder()
                 let cache = try decoder.decode(Cache.self, from: data)
-                completion(.found(cache.localFeed, timestamp: cache.timestamp))
+                completion(.found(feed: cache.localFeed, timestamp: cache.timestamp))
             } catch {
                 completion(.failure(error))
             }
