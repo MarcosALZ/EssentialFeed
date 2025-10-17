@@ -57,6 +57,9 @@ final class EssentialFeedCacheIntegrationTests: XCTestCase {
         let storeBundle = Bundle(for: CoreDataFeedStore.self)
         let storeURL = testSpecificStoreURL()
         let store = try! CoreDataFeedStore(storeURL: storeURL, bundle: storeBundle)
+        // The store could be change for the CodableFeedStore and it works correctly (It is possible because of the SOLID principles applied LSP, DIP, ISP)
+        // It is not necessary to test both so we keep only the CoreData one
+        //let store = CodableFeedStore(storeURL: storeURL)
         let sut = LocalFeedLoader(store: store, currentDate: Date.init)
         trackForMemoryLeak(store, file: file, line: line)
         trackForMemoryLeak(sut, file: file, line: line)
