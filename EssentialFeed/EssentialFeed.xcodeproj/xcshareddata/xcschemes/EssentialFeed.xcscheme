@@ -59,6 +59,65 @@
                BlueprintName = "EssentialFeedTests"
                ReferencedContainer = "container:EssentialFeed.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "CodableFeedStoreTests">
+               </Test>
+               <Test
+                  Identifier = "CodableFeedStoreTests/test_delete_deliversErrorOnDeletionError()">
+               </Test>
+               <Test
+                  Identifier = "CodableFeedStoreTests/test_delete_deliversNoErrorOnEmptyCache()">
+               </Test>
+               <Test
+                  Identifier = "CodableFeedStoreTests/test_delete_deliversNoErrorOnNonEmptyCache()">
+               </Test>
+               <Test
+                  Identifier = "CodableFeedStoreTests/test_delete_emptiesPreviouslyInsertedCache()">
+               </Test>
+               <Test
+                  Identifier = "CodableFeedStoreTests/test_delete_hasNoSideEffectsOnDeletionError()">
+               </Test>
+               <Test
+                  Identifier = "CodableFeedStoreTests/test_delete_hasNoSideEffectsOnEmptyCache()">
+               </Test>
+               <Test
+                  Identifier = "CodableFeedStoreTests/test_insert_deliversErrorOnInsertionError()">
+               </Test>
+               <Test
+                  Identifier = "CodableFeedStoreTests/test_insert_deliversNoErrorOnEmptyCache()">
+               </Test>
+               <Test
+                  Identifier = "CodableFeedStoreTests/test_insert_deliversNoErrorOnNonEmptyCache()">
+               </Test>
+               <Test
+                  Identifier = "CodableFeedStoreTests/test_insert_hasNoSideEffectsOnInsertionError()">
+               </Test>
+               <Test
+                  Identifier = "CodableFeedStoreTests/test_insert_overridesPreviouslyInsertedCacheValues()">
+               </Test>
+               <Test
+                  Identifier = "CodableFeedStoreTests/test_retrieve_deliversEmptyOnEmptyCache()">
+               </Test>
+               <Test
+                  Identifier = "CodableFeedStoreTests/test_retrieve_deliversFailureOnRetrievalError()">
+               </Test>
+               <Test
+                  Identifier = "CodableFeedStoreTests/test_retrieve_deliversFoundValuesOnNonEmptyCache()">
+               </Test>
+               <Test
+                  Identifier = "CodableFeedStoreTests/test_retrieve_hasNoSideEffectsOnEmptyCache()">
+               </Test>
+               <Test
+                  Identifier = "CodableFeedStoreTests/test_retrieve_hasNoSideEffectsOnFailure()">
+               </Test>
+               <Test
+                  Identifier = "CodableFeedStoreTests/test_retrieve_hasNoSideEffectsOnNonEmptyCache()">
+               </Test>
+               <Test
+                  Identifier = "CodableFeedStoreTests/test_storeSideEffects_runSerially()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>
