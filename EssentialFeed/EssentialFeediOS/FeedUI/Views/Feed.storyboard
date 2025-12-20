@@ -79,6 +79,9 @@ Location</string>
                                                                 <fontDescription key="titleFontDescription" type="system" pointSize="60"/>
                                                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="3sk-vM-Nfc" eventType="touchUpInside" id="mTJ-WQ-MX4"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -120,6 +123,14 @@ Location</string>
                                         <constraint firstItem="k3h-Eh-3sd" firstAttribute="top" secondItem="AAW-Lq-3ei" secondAttribute="topMargin" priority="999" constant="6" id="QPq-rS-uZ2"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="qKi-W0-cOx" id="trx-JK-j2I"/>
+                                    <outlet property="feedImageContainer" destination="ufg-RG-moX" id="evH-lY-GtE"/>
+                                    <outlet property="feedImageRetryButton" destination="tyf-2i-C6d" id="LHc-uf-uLs"/>
+                                    <outlet property="feedImageView" destination="fbN-Xb-BMc" id="sIg-MS-Kah"/>
+                                    <outlet property="locationContainer" destination="sbR-gC-e5m" id="EoJ-XX-k9Z"/>
+                                    <outlet property="locationLabel" destination="rXU-D4-2xe" id="LOq-4X-Uky"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -128,7 +139,6 @@ Location</string>
                             <outlet property="prefetchDataSource" destination="yNe-ew-cjm" id="zj4-wS-lNW"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title=" My Feed" id="oLa-PD-fr9"/>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Fjp-XX-JCF">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
