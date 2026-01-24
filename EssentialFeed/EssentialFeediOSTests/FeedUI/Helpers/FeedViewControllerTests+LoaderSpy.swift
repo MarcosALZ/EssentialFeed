@@ -1,5 +1,5 @@
 //
-//  FeedViewControllerTests+LoaderSpy.swift
+//  FeedUIIntegrationTests+LoaderSpy.swift
 //  EssentialFeed
 //
 //  Created by Israel Marcos Alvarez Mesa on 22/11/25.
