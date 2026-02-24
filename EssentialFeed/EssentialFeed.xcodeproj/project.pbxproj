@@ -347,6 +347,16 @@
 			path = Codable;
 			sourceTree = "<group>";
 		};
+		CC11D7F12F4E089900FB93CF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CC34F21B2F255B9F00C6A28C /* UIImageView+Animations.swift */,
+				CC34F21C2F255B9F00C6A28C /* UITableView+Dequeueing.swift */,
+				CC34F21D2F255B9F00C6A28C /* UIView+Shimmering.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		CC17B7512E9E40AD00E828EE /* FeedStoreSpecs */ = {
 			isa = PBXGroup;
 			children = (
@@ -431,13 +441,11 @@
 		CC34F21E2F255B9F00C6A28C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CC11D7F12F4E089900FB93CF /* Helpers */,
 				CC34F2182F255B9F00C6A28C /* Feed.storyboard */,
 				CC34F2192F255B9F00C6A28C /* Feed.xcassets */,
 				CC11D7EE2F4CC32F00FB93CF /* ErrorView.swift */,
 				CC34F21A2F255B9F00C6A28C /* FeedImageCell.swift */,
-				CC34F21B2F255B9F00C6A28C /* UIImageView+Animations.swift */,
-				CC34F21C2F255B9F00C6A28C /* UITableView+Dequeueing.swift */,
-				CC34F21D2F255B9F00C6A28C /* UIView+Shimmering.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
