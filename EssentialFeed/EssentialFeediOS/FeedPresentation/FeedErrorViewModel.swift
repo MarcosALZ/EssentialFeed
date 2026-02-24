@@ -1,0 +1,18 @@
+//
+//  FeedErrorViewModel.swift
+//  EssentialFeed
+//
+//  Created by Israel Marcos Alvarez Mesa on 24/2/26.
+//
+
+struct FeedErrorViewModel {
+	let message: String?
+
+    static var noError: FeedErrorViewModel {
+        return FeedErrorViewModel(message: nil)
+    }
+
+    static func error(message: String) -> FeedErrorViewModel {
+        return FeedErrorViewModel(message: message)
+    }
+}
