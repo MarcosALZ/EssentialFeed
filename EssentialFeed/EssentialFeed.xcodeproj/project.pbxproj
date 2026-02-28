@@ -79,6 +79,7 @@
 		CCDBFA682F53868A002279B1 /* FeedLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBFA672F538685002279B1 /* FeedLoadingViewModel.swift */; };
 		CCDBFA6A2F5386C5002279B1 /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBFA692F5386C5002279B1 /* FeedErrorViewModel.swift */; };
 		CCDBFA6B2F538B89002279B1 /* FeedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBFA412F538146002279B1 /* FeedLocalizationTests.swift */; };
+		CCDBFA6D2F538BF1002279B1 /* FeedImagePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBFA6C2F538BEE002279B1 /* FeedImagePresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,6 +209,7 @@
 		CCDBFA652F538634002279B1 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		CCDBFA672F538685002279B1 /* FeedLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoadingViewModel.swift; sourceTree = "<group>"; };
 		CCDBFA692F5386C5002279B1 /* FeedErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedErrorViewModel.swift; sourceTree = "<group>"; };
+		CCDBFA6C2F538BEE002279B1 /* FeedImagePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImagePresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -530,6 +532,7 @@
 		CCDBF9B02F50B5A1002279B1 /* Feed Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CCDBFA6C2F538BEE002279B1 /* FeedImagePresenterTests.swift */,
 				CCDBF9B12F50B5B8002279B1 /* FeedPresenterTests.swift */,
 				CCDBFA412F538146002279B1 /* FeedLocalizationTests.swift */,
 			);
@@ -840,6 +843,7 @@
 				CC6A62FC2E94FC4A0088122B /* CodableFeedStoreTests.swift in Sources */,
 				CC6A62812E9289D10088122B /* FeedCacheTestHelpers.swift in Sources */,
 				CCDBFA6B2F538B89002279B1 /* FeedLocalizationTests.swift in Sources */,
+				CCDBFA6D2F538BF1002279B1 /* FeedImagePresenterTests.swift in Sources */,
 				CC6A627F2E901F1F0088122B /* ValidateFeedCacheUseCaseTests.swift in Sources */,
 				CC2D4AB52E6772EA009CE9F1 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
 				CC17B74E2E9E3F1400E828EE /* XCTestCase+FailableInsertFeedStoreSpecs.swift in Sources */,
