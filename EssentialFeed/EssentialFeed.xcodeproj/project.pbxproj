@@ -35,8 +35,6 @@
 		CC33864A2EC8F7C0000F3153 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 080EDEF121B6DA7E00813479 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CC33864E2EC8F871000F3153 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5AB9632E78173F00590488 /* XCTestCase+MemoryLeakTracking.swift */; };
 		CC34F2212F255B9F00C6A28C /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC34F2042F255B9F00C6A28C /* FeedImageDataLoader.swift */; };
-		CC34F2222F255B9F00C6A28C /* FeedImagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC34F20A2F255B9F00C6A28C /* FeedImagePresenter.swift */; };
-		CC34F2232F255B9F00C6A28C /* FeedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC34F20B2F255B9F00C6A28C /* FeedImageViewModel.swift */; };
 		CC34F2252F255B9F00C6A28C /* FeedImageDataLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC34F20E2F255B9F00C6A28C /* FeedImageDataLoaderPresentationAdapter.swift */; };
 		CC34F2262F255B9F00C6A28C /* FeedLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC34F20F2F255B9F00C6A28C /* FeedLoaderPresentationAdapter.swift */; };
 		CC34F2272F255B9F00C6A28C /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC34F2102F255B9F00C6A28C /* FeedUIComposer.swift */; };
@@ -168,8 +166,6 @@
 		CC2D4AC12E6DFE5E009CE9F1 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		CC2D4AC32E6DFECF009CE9F1 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 		CC34F2042F255B9F00C6A28C /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
-		CC34F20A2F255B9F00C6A28C /* FeedImagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImagePresenter.swift; sourceTree = "<group>"; };
-		CC34F20B2F255B9F00C6A28C /* FeedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageViewModel.swift; sourceTree = "<group>"; };
 		CC34F20E2F255B9F00C6A28C /* FeedImageDataLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
 		CC34F20F2F255B9F00C6A28C /* FeedLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
 		CC34F2102F255B9F00C6A28C /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
@@ -426,15 +422,6 @@
 			path = FeedImageLoader;
 			sourceTree = "<group>";
 		};
-		CC34F20D2F255B9F00C6A28C /* FeedPresentation */ = {
-			isa = PBXGroup;
-			children = (
-				CC34F20A2F255B9F00C6A28C /* FeedImagePresenter.swift */,
-				CC34F20B2F255B9F00C6A28C /* FeedImageViewModel.swift */,
-			);
-			path = FeedPresentation;
-			sourceTree = "<group>";
-		};
 		CC34F2142F255B9F00C6A28C /* Composers */ = {
 			isa = PBXGroup;
 			children = (
@@ -483,7 +470,6 @@
 			isa = PBXGroup;
 			children = (
 				CC34F2052F255B9F00C6A28C /* FeedImageLoader */,
-				CC34F20D2F255B9F00C6A28C /* FeedPresentation */,
 				CC34F21F2F255B9F00C6A28C /* FeedUI */,
 			);
 			path = EssentialFeediOS;
@@ -885,8 +871,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC34F2212F255B9F00C6A28C /* FeedImageDataLoader.swift in Sources */,
-				CC34F2222F255B9F00C6A28C /* FeedImagePresenter.swift in Sources */,
-				CC34F2232F255B9F00C6A28C /* FeedImageViewModel.swift in Sources */,
 				CC11D7EF2F4CC33300FB93CF /* ErrorView.swift in Sources */,
 				CC34F2252F255B9F00C6A28C /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
 				CC34F2262F255B9F00C6A28C /* FeedLoaderPresentationAdapter.swift in Sources */,
