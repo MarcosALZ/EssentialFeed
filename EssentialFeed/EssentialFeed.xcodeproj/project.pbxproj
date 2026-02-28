@@ -80,6 +80,7 @@
 		CCDBFA6A2F5386C5002279B1 /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBFA692F5386C5002279B1 /* FeedErrorViewModel.swift */; };
 		CCDBFA6B2F538B89002279B1 /* FeedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBFA412F538146002279B1 /* FeedLocalizationTests.swift */; };
 		CCDBFA6D2F538BF1002279B1 /* FeedImagePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBFA6C2F538BEE002279B1 /* FeedImagePresenterTests.swift */; };
+		CCDBFA6F2F53937F002279B1 /* FeedImagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBFA6E2F53937F002279B1 /* FeedImagePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -210,6 +211,7 @@
 		CCDBFA672F538685002279B1 /* FeedLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoadingViewModel.swift; sourceTree = "<group>"; };
 		CCDBFA692F5386C5002279B1 /* FeedErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedErrorViewModel.swift; sourceTree = "<group>"; };
 		CCDBFA6C2F538BEE002279B1 /* FeedImagePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImagePresenterTests.swift; sourceTree = "<group>"; };
+		CCDBFA6E2F53937F002279B1 /* FeedImagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImagePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -542,6 +544,7 @@
 		CCDBFA612F5384CA002279B1 /* Feed Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CCDBFA6E2F53937F002279B1 /* FeedImagePresenter.swift */,
 				CCDBFA692F5386C5002279B1 /* FeedErrorViewModel.swift */,
 				CCDBFA672F538685002279B1 /* FeedLoadingViewModel.swift */,
 				CCDBFA652F538634002279B1 /* FeedViewModel.swift */,
@@ -816,6 +819,7 @@
 				CC05027F2EA145DB00CB94FB /* CoreDataHelpers.swift in Sources */,
 				080EDF0E21B6DCB600813479 /* FeedLoader.swift in Sources */,
 				CCDBFA6A2F5386C5002279B1 /* FeedErrorViewModel.swift in Sources */,
+				CCDBFA6F2F53937F002279B1 /* FeedImagePresenter.swift in Sources */,
 				CC2D4AC42E6DFED4009CE9F1 /* FeedItemsMapper.swift in Sources */,
 				CC55C0392E8C360700DBE516 /* RemoteFeedItem.swift in Sources */,
 				CCDBFA632F538512002279B1 /* FeedPresenter.swift in Sources */,
