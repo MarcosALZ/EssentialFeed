@@ -1559,7 +1559,7 @@
 				CCB16BBD2F9D3AD80044DC8F /* FeedStore2.xcdatamodel */,
 				CC0502722E9FFBFA00CB94FB /* FeedStore.xcdatamodel */,
 			);
-			currentVersion = CC0502722E9FFBFA00CB94FB /* FeedStore.xcdatamodel */;
+			currentVersion = CCB16BBD2F9D3AD80044DC8F /* FeedStore2.xcdatamodel */;
 			path = FeedStore.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
