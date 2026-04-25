@@ -105,7 +105,7 @@ Given the customer doesn't have connectivity
 4. System creates image feed from cached data.
 5. System delivers image feed.
 
-#### Retireval error course (sad path):
+#### Retrieval error course (sad path):
 1. System delivers error.
 
 #### Expired cache course (sad path): 
@@ -133,7 +133,7 @@ Given the customer doesn't have connectivity
 1. System delivers error.
 
 #### Empty cache course (sad path):
-1. System delivers no image data.
+1. System delivers not found error.
 
 ---
 
@@ -144,7 +144,7 @@ Given the customer doesn't have connectivity
 2. System retrieves feed data from cache.
 3. System validates cache is less than seven days old.
 
-#### Retireval error course (sad path):
+#### Retrieval error course (sad path):
 1. System deletes cache.
 
 #### Expired cache course (sad path): 
@@ -190,7 +190,7 @@ Given the customer doesn't have connectivity
 | `id`          | `UUID`              |
 | `description` | `String` (optional) |
 | `location`    | `String` (optional) |
-| `url`         | `URL`               |
+| `url`	        | `URL`               |
 
 ### Payload contract
 
