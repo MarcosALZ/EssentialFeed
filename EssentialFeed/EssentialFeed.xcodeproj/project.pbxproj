@@ -332,11 +332,11 @@
 		080EDEF321B6DA7E00813479 /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
-				CCDBFA612F5384CA002279B1 /* Feed Presentation */,
 				080EDEF521B6DA7E00813479 /* Info.plist */,
-				CC55C0252E8B0BC400DBE516 /* FeedCache */,
 				080EDF1021B6DFA200813479 /* Feed Feature */,
 				CC2D4AB62E697488009CE9F1 /* Feed API */,
+				CC55C0252E8B0BC400DBE516 /* FeedCache */,
+				CCDBFA612F5384CA002279B1 /* Feed Presentation */,
 			);
 			path = EssentialFeed;
 			sourceTree = "<group>";
@@ -378,10 +378,10 @@
 				CC0502692E9FF8C300CB94FB /* CoreDataFeedStore.swift */,
 				CCB16BC02F9D40DB0044DC8F /* CoreDataFeedStore+FeedStore.swift */,
 				CCB16BBE2F9D3C670044DC8F /* CoreDataFeedStore+FeedImageDataLoader.swift */,
-				CC0502712E9FFBFA00CB94FB /* FeedStore.xcdatamodeld */,
 				CC05027E2EA145DB00CB94FB /* CoreDataHelpers.swift */,
 				CC0502802EA1466A00CB94FB /* ManagedCache.swift */,
 				CC0502822EA1468100CB94FB /* ManagedFeedImage.swift */,
+				CC0502712E9FFBFA00CB94FB /* FeedStore.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -421,10 +421,10 @@
 			isa = PBXGroup;
 			children = (
 				CCAF06002F98CBCA00F8709C /* Helpers */,
-				CCAF05FE2F98C53C00F8709C /* RemoteFeedImageDataLoader.swift */,
 				CC2D4AB72E6974B2009CE9F1 /* RemoteFeedLoader.swift */,
 				CC2D4AC32E6DFECF009CE9F1 /* FeedItemsMapper.swift */,
 				CC55C0382E8C35FE00DBE516 /* RemoteFeedItem.swift */,
+				CCAF05FE2F98C53C00F8709C /* RemoteFeedImageDataLoader.swift */,
 				CC2D4AC12E6DFE5E009CE9F1 /* HTTPClient.swift */,
 				CC5AB9652E786E8A00590488 /* URLSessionHTTPClient.swift */,
 			);
@@ -522,12 +522,12 @@
 			isa = PBXGroup;
 			children = (
 				CC05027B2EA1452300CB94FB /* Infrastructure */,
-				CCAF06412F98D40600F8709C /* FeedImageDataStore.swift */,
-				CCAF06432F98D42300F8709C /* LocalFeedImageDataLoader.swift */,
-				CC55C0282E8B0CAD00DBE516 /* FeedStore.swift */,
 				CC55C0262E8B0BD400DBE516 /* LocalFeedLoader.swift */,
+				CC55C0282E8B0CAD00DBE516 /* FeedStore.swift */,
 				CC55C03A2E8C366C00DBE516 /* LocalFeedImage.swift */,
 				CC6A62852E92A1150088122B /* FeedCachePolicy.swift */,
+				CCAF06432F98D42300F8709C /* LocalFeedImageDataLoader.swift */,
+				CCAF06412F98D40600F8709C /* FeedImageDataStore.swift */,
 			);
 			path = FeedCache;
 			sourceTree = "<group>";
