@@ -9,6 +9,8 @@ import XCTest
 import EssentialFeed
 import EssentialApp
 
+// A partir de mover FeedLoaderCacheDecorator a producción empiezan a fallar los tests
+
 class FeedLoaderCacheDecoratorTests: XCTestCase, FeedLoaderTestCase {
 
     func test_load_deliversFeedOnLoaderSuccess() {
