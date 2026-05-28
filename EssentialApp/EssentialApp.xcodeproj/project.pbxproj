@@ -48,9 +48,10 @@
 /* Begin PBXFileReference section */
 		CC52D4642F9D59F1007A9C39 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC52D4652F9D59F1007A9C39 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7009A62FC89EBD0099345A /* CI_iOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = CI_iOS.xctestplan; path = ../EssentialFeed/CI_iOS.xctestplan; sourceTree = "<group>"; };
 		CCB16C032F9D51090044DC8F /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB16C192F9D510B0044DC8F /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCB16C232F9D510B0044DC8F /* EssentialAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB16C232F9D510B0044DC8F /* EssentialAppUIAcceptanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppUIAcceptanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -123,6 +124,7 @@
 		CCB16BFA2F9D51090044DC8F = {
 			isa = PBXGroup;
 			children = (
+				CC7009A62FC89EBD0099345A /* CI_iOS.xctestplan */,
 				CCB16C052F9D51090044DC8F /* EssentialApp */,
 				CCB16C1C2F9D510B0044DC8F /* EssentialAppTests */,
 				CCB16C262F9D510B0044DC8F /* EssentialAppUITests */,
@@ -136,7 +138,7 @@
 			children = (
 				CCB16C032F9D51090044DC8F /* EssentialApp.app */,
 				CCB16C192F9D510B0044DC8F /* EssentialAppTests.xctest */,
-				CCB16C232F9D510B0044DC8F /* EssentialAppUITests.xctest */,
+				CCB16C232F9D510B0044DC8F /* EssentialAppUIAcceptanceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,9 +192,9 @@
 			productReference = CCB16C192F9D510B0044DC8F /* EssentialAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CCB16C222F9D510B0044DC8F /* EssentialAppUITests */ = {
+		CCB16C222F9D510B0044DC8F /* EssentialAppUIAcceptanceTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CCB16C342F9D510B0044DC8F /* Build configuration list for PBXNativeTarget "EssentialAppUITests" */;
+			buildConfigurationList = CCB16C342F9D510B0044DC8F /* Build configuration list for PBXNativeTarget "EssentialAppUIAcceptanceTests" */;
 			buildPhases = (
 				CCB16C1F2F9D510B0044DC8F /* Sources */,
 				CCB16C202F9D510B0044DC8F /* Frameworks */,
@@ -206,11 +208,11 @@
 			fileSystemSynchronizedGroups = (
 				CCB16C262F9D510B0044DC8F /* EssentialAppUITests */,
 			);
-			name = EssentialAppUITests;
+			name = EssentialAppUIAcceptanceTests;
 			packageProductDependencies = (
 			);
 			productName = EssentialAppUITests;
-			productReference = CCB16C232F9D510B0044DC8F /* EssentialAppUITests.xctest */;
+			productReference = CCB16C232F9D510B0044DC8F /* EssentialAppUIAcceptanceTests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -253,7 +255,7 @@
 			targets = (
 				CCB16C022F9D51090044DC8F /* EssentialApp */,
 				CCB16C182F9D510B0044DC8F /* EssentialAppTests */,
-				CCB16C222F9D510B0044DC8F /* EssentialAppUITests */,
+				CCB16C222F9D510B0044DC8F /* EssentialAppUIAcceptanceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -622,7 +624,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CCB16C342F9D510B0044DC8F /* Build configuration list for PBXNativeTarget "EssentialAppUITests" */ = {
+		CCB16C342F9D510B0044DC8F /* Build configuration list for PBXNativeTarget "EssentialAppUIAcceptanceTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CCB16C352F9D510B0044DC8F /* Debug */,
