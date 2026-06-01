@@ -28,6 +28,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             imageLoader: imageLoader)
 
         window?.rootViewController = feedViewController
+
+//        let remoteURL = URL(string: "https://ile-api.essentialdeveloper.com/essential-feed/v1/feed")!
+//
+//        let remoteClient = URLSessionHTTPClient(session: URLSession(configuration: .ephemeral))
+//        let remoteFeedLoader = RemoteFeedLoader(url: remoteURL, client: remoteClient)
+//        let remoteImageLoader = RemoteFeedImageDataLoader(client: remoteClient)
+//
+//        window?.rootViewController = FeedUIComposer.feedComposedWith(
+//            feedLoader: remoteFeedLoader,
+//            imageLoader: remoteImageLoader)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
