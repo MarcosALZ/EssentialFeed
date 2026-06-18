@@ -21,7 +21,6 @@
 		CCC548912FE4532E003AFC37 /* FeedLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC5487F2FE4532E003AFC37 /* FeedLoaderCacheDecorator.swift */; };
 		CCC548922FE4532E003AFC37 /* FeedLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC548802FE4532E003AFC37 /* FeedLoaderWithFallbackComposite.swift */; };
 		CCC548932FE4532E003AFC37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC548862FE4532E003AFC37 /* SceneDelegate.swift */; };
-		CCC548942FE4532E003AFC37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC548872FE4532E003AFC37 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +73,6 @@
 		CCC548822FE4532E003AFC37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCC548842FE4532E003AFC37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCC548862FE4532E003AFC37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CCC548872FE4532E003AFC37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -162,7 +160,6 @@
 				CCC5487B2FE4532E003AFC37 /* Assets.xcassets */,
 				CCC548832FE4532E003AFC37 /* LaunchScreen.storyboard */,
 				CCC548812FE4532E003AFC37 /* Info.plist */,
-				CCC548872FE4532E003AFC37 /* ViewController.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -320,7 +317,6 @@
 				CCC548912FE4532E003AFC37 /* FeedLoaderCacheDecorator.swift in Sources */,
 				CCC548922FE4532E003AFC37 /* FeedLoaderWithFallbackComposite.swift in Sources */,
 				CCC548932FE4532E003AFC37 /* SceneDelegate.swift in Sources */,
-				CCC548942FE4532E003AFC37 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
