@@ -24,15 +24,6 @@
         "identifier" : "CCB16C182F9D510B0044DC8F",
         "name" : "EssentialAppTests"
       }
-    },
-    {
-      "enabled" : false,
-      "parallelizable" : true,
-      "target" : {
-        "containerPath" : "container:EssentialApp.xcodeproj",
-        "identifier" : "CCB16C222F9D510B0044DC8F",
-        "name" : "EssentialAppUITests"
-      }
     }
   ],
   "version" : 1

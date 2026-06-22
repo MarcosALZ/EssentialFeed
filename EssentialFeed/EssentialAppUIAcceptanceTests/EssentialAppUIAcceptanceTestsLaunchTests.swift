@@ -1,13 +1,13 @@
 //
-//  EssentialAppUITestsLaunchTests.swift
-//  EssentialAppUITests
+//  EssentialAppUIAcceptanceTestsLaunchTests.swift
+//  EssentialAppUIAcceptanceTests
 //
-//  Created by Israel Marcos Alvarez Mesa on 25/4/26.
+//  Created by Israel Marcos Alvarez Mesa on 22/06/2026.
 //
 
 import XCTest
 
-final class EssentialAppUITestsLaunchTests: XCTestCase {
+final class EssentialAppUIAcceptanceTestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
@@ -24,6 +24,8 @@ final class EssentialAppUITestsLaunchTests: XCTestCase {
 
         // Insert steps here to perform after app launch but before taking a screenshot,
         // such as logging into a test account or navigating somewhere in the app
+        // XCUIAutomation Documentation
+        // https://developer.apple.com/documentation/xcuiautomation
 
         let attachment = XCTAttachment(screenshot: app.screenshot())
         attachment.name = "Launch Screen"
