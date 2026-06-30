@@ -6,9 +6,8 @@
 //
 
 import UIKit
-import EssentialFeed
-import EssentialFeediOS
 import CoreData
+import EssentialFeed
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
