@@ -119,7 +119,6 @@
 		CCC548E82FE99E14003AFC37 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderWithFallbackCompositeTests.swift; sourceTree = "<group>"; };
 		CCC548E92FE99E14003AFC37 /* FeedLoaderCacheDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderCacheDecoratorTests.swift; sourceTree = "<group>"; };
 		CCC548EA2FE99E14003AFC37 /* FeedLoaderWithFallbackCompositeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderWithFallbackCompositeTests.swift; sourceTree = "<group>"; };
-		CCC548F62FE99E90003AFC37 /* EssentialAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +156,6 @@
 				CC7009A62FC89EBD0099345A /* CI_iOS.xctestplan */,
 				CCC548882FE4532E003AFC37 /* EssentialApp */,
 				CCC548EB2FE99E14003AFC37 /* EssentialAppTests */,
-				CCC548F72FE99E90003AFC37 /* EssentialAppUITests */,
 				CC52D4632F9D59F1007A9C39 /* Frameworks */,
 				CCB16C042F9D51090044DC8F /* Products */,
 			);
@@ -230,14 +228,6 @@
 				CC33B8552FF44C88004D2794 /* FeedAcceptanceTests.swift */,
 			);
 			path = EssentialAppTests;
-			sourceTree = "<group>";
-		};
-		CCC548F72FE99E90003AFC37 /* EssentialAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CCC548F62FE99E90003AFC37 /* EssentialAppUITests.swift */,
-			);
-			path = EssentialAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
